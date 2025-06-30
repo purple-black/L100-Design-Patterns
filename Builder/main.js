@@ -1,0 +1,13 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var vegMealBuilder_1 = require("./builders/vegMealBuilder");
+var NonVegMealBuilder_1 = require("./builders/NonVegMealBuilder");
+var MealDirector_1 = require("./directors/MealDirector");
+var vegBuilder = new vegMealBuilder_1.VegMealBuilder();
+var vegDirector = new MealDirector_1.MealDirector(vegBuilder);
+var vegMeal = vegDirector.constructFullMeal();
+vegMeal.describe();
+var nonVegBuilder = new NonVegMealBuilder_1.NonVegMealBuilder();
+var nonVegDirector = new MealDirector_1.MealDirector(nonVegBuilder);
+var nonVegMeal = nonVegDirector.constructFullMeal();
+nonVegMeal.describe();
