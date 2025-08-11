@@ -25,4 +25,40 @@ console.log(`Order: ${coffee3.description()}`);
 console.log(`Cost: $${coffee3.cost().toFixed(2)}`);
 
 
+/*
+
+//// without using decorator pattern ////
+
+class Coffee {
+    private hasMilk: boolean;
+    private hasWhippedCream: boolean;
+
+    constructor(milk: boolean = false, whippedCream: boolean = false) {
+        this.hasMilk = milk;
+        this.hasWhippedCream = whippedCream;
+    }
+
+    cost(): number {
+        let price = 10; // base coffee
+        if (this.hasMilk) price += 10;
+        if (this.hasWhippedCream) price += 20;
+        return price;
+    }
+
+    description(): string {
+        let desc = "Plain Coffee";
+        if (this.hasMilk) desc += " + Milk";
+        if (this.hasWhippedCream) desc += " + Whipped Cream";
+        return desc;
+    }
+}
+
+// Usage
+const coffee = new Coffee(true, true); // milk + whipped cream
+console.log(`Order: ${coffee.description()}`); // Plain Coffee + Milk + Whipped Cream"
+console.log(`Cost: $${coffee.cost().toFixed(2)}`);
+
+*/
+
+
 
