@@ -89,7 +89,7 @@ const character = CharacterFactory.createCharacter(gameCharacterType);
 character.displayCharacteristics();
 ```
 
-Use of factory design pattern:
+## Use of factory design pattern:
 
 Encapsulation of Object Creation → The client doesn’t directly use new.
 
@@ -100,7 +100,7 @@ Polymorphism → Factory always returns something that implements GameCharacter.
 Loose Coupling → Client depends only on the GameCharacter interface.
 
 
-Without Factory Pattern
+## Without Factory Pattern
 
 If we don’t use the factory, the client would need to handle instantiation logic itself:
 
@@ -115,7 +115,7 @@ switch (gameCharacterType.toLowerCase()) {
 character.displayCharacteristics();
 ```
 
-Problems in the above code without factory:
+## Problems in the above code without factory:
 
 Tight coupling → Client must know about all classes.
 
