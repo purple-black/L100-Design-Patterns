@@ -21,3 +21,6 @@ export interface GameCharacter {
     displayCharacteristics(): void;
 }
 
+Concrete Classes
+
+Each character (Warrior, Mage, Archer) implements the GameCharacter interface:
