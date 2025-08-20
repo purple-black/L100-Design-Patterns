@@ -90,7 +90,7 @@ processTransaction(paymentProcessor, 1000);
 ```
 ---
 
-### Code Without Adapter Pattern
+### Without Adapter Pattern
 If we don’t use the Adapter pattern, the client would directly depend on the third-party class:
 ```ts
 import { ThirdPartyPayment } from "./thirdParty/ThirdPartyPayment";
