@@ -64,6 +64,26 @@ Each subclass **customizes** the variable steps but **inherits** the workflow.
 
 ---
 
+## Without Template Method Pattern (YAML Representation)
+
+```yaml
+without template method pattern:
+  description: >
+    If we didn’t use the pattern, each course class would implement the entire workflow,
+    leading to several issues.
+  problems:
+    - "Duplicate code for enroll() and provideCertificate()."
+    - "Hard maintenance: if enrollment changes, all classes must be updated."
+    - "Inflexibility: difficult to add new course types consistently."
+  example_code: |
+    class MathCourseWithoutPattern {
+        public takeCourse(): void {
+            console.log("Student enrolled in the course.");
+            console.log("Providing math textbooks and problem sets.");
+            console.log("Conducting math exam with problem-solving questions.");
+            console.log("Certificate provided upon completion.");
+        }
+    }
 
 
 
