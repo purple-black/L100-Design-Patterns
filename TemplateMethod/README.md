@@ -64,28 +64,56 @@ Each subclass **customizes** the variable steps but **inherits** the workflow.
 
 ---
 
-## Without Template Method Pattern (YAML Representation)
+## Without Template Method Pattern 
 
-```yaml
-without template method pattern:
-  description: >
-    If we didn’t use the pattern, each course class would implement the entire workflow,
-    leading to several issues.
-  problems:
-    - "Duplicate code for enroll() and provideCertificate()."
-    - "Hard maintenance: if enrollment changes, all classes must be updated."
-    - "Inflexibility: difficult to add new course types consistently."
-  example_code: |
-    class MathCourseWithoutPattern {
-        public takeCourse(): void {
-            console.log("Student enrolled in the course.");
-            console.log("Providing math textbooks and problem sets.");
-            console.log("Conducting math exam with problem-solving questions.");
-            console.log("Certificate provided upon completion.");
-        }
+Without the Template Method Pattern
+
+If we didn’t use the pattern, each course would have to implement the entire workflow in its own class, leading to duplication and maintenance problems.
+
+```ts
+// main_without_pattern.ts
+
+// Math Course without Template Method
+class MathCourseWithoutPattern {
+    public takeCourse(): void {
+        console.log("Student enrolled in the course.");
+        console.log("Providing math textbooks and problem sets.");
+        console.log("Conducting math exam with problem-solving questions.");
+        console.log("Certificate provided upon completion.");
     }
+}
 
+// Programming Course without Template Method
+class ProgrammingCourseWithoutPattern {
+    public takeCourse(): void {
+        console.log("Student enrolled in the course.");
+        console.log("Providing programming tutorials and coding exercises.");
+        console.log("Conducting coding exam with practical assignments.");
+        console.log("Certificate provided upon completion.");
+    }
+}
 
+// Client code
+const mathCourse = new MathCourseWithoutPattern();
+mathCourse.takeCourse();
 
+console.log("----");
 
+const programmingCourse = new ProgrammingCourseWithoutPattern();
+programmingCourse.takeCourse();
+```
 
+---
+## Problems
+
+- Duplication of common code (e.g., enrollment, certificate).
+- No enforced workflow – steps might me missed or order changed.
+- Harder to maintain – updating one common step means editing all classes.
+- Inflexible – difficult to introduce new variations while keeping structure consistent.
+
+---
+## When to use template method pattern
+
+- When multiple classes share the same workflow with minor variations.
+- When you want to enforce an algorithm structure while allowing flexibility.
+- When you need to avoid duplication of common steps.
