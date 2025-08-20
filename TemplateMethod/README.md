@@ -7,6 +7,28 @@ This folder demonstrates the Template Method Pattern using an **online course sy
 
 ---
 
+##  How to Run
+
+Clone the repo:
+
+```
+git clone https://github.com/purple-black/L100-Design-Patterns.git
+cd TemplateMethod
+```
+
+Install TypeScript:
+
+```
+npm install -g typescript
+```
+
+Open terminal and enter:
+Compile TypeScript and then run the compiled javascript file
+
+```
+tsc main.ts
+node main.js
+```
 
 ---
 
@@ -43,30 +65,7 @@ Each subclass **customizes** the variable steps but **inherits** the workflow.
 
 ---
 
-## Code Flow
 
-```mermaid
-classDiagram
-    class OnlineCourse {
-        +takeCourse() void
-        -enroll() void
-        #provideMaterials() void
-        #conductExam() void
-        -provideCertificate() void
-    }
-
-    class MathCourse {
-        +provideMaterials() void
-        +conductExam() void
-    }
-
-    class ProgrammingCourse {
-        +provideMaterials() void
-        +conductExam() void
-    }
-
-    OnlineCourse <|-- MathCourse
-    OnlineCourse <|-- ProgrammingCourse
 
 
 
