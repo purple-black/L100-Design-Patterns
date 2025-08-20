@@ -1,6 +1,5 @@
 # Template Method Design Pattern
 
-##  Overview
 The **Template Method Pattern** defines the **skeleton of an algorithm** in an abstract class and allows subclasses to **override specific steps** without changing the overall algorithm structure.
 
 This folder demonstrates the Template Method Pattern using an **online course system** where different courses (Math, Programming) follow the same workflow but differ in the materials provided and type of exams.
@@ -64,6 +63,7 @@ Each subclass **customizes** the variable steps but **inherits** the workflow.
 - Ensures the workflow always follows the same sequence.
 
 ---
+
 
 
 
