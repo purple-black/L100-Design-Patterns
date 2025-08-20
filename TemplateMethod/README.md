@@ -71,8 +71,6 @@ Without the Template Method Pattern
 If we didn’t use the pattern, each course would have to implement the entire workflow in its own class, leading to duplication and maintenance problems.
 
 ```ts
-// main_without_pattern.ts
-
 // Math Course without Template Method
 class MathCourseWithoutPattern {
     public takeCourse(): void {
@@ -117,3 +115,4 @@ programmingCourse.takeCourse();
 - When multiple classes share the same workflow with minor variations.
 - When you want to enforce an algorithm structure while allowing flexibility.
 - When you need to avoid duplication of common steps.
+
