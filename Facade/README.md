@@ -7,7 +7,29 @@ This makes the system **easier to use, maintain, and extend** without exposing u
 
 ---
 
-## Example in This Repository
+How to Run <br><br>
+
+Clone the repo: <br><br>
+
+```
+git clone https://github.com/purple-black/L100-Design-Patterns.git
+cd Facade
+```
+<br><br>
+Install TypeScript: <br><br>
+
+```
+npm install -g typescript
+```
+<br><br>
+Open terminal and enter:<br>
+Compile TypeScript and then run the compiled javascript file<br><br>
+
+```
+tsc main.ts <br>
+node main.js
+```
+---
 
 ### How It Works
 In this project, the process of placing an order involves multiple steps:
