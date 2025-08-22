@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var PlayerCharacter_1 = require("./models/PlayerCharacter");
 var CharacterSpawner_1 = require("./spawner/CharacterSpawner");
 // Create base character prototype
-var baseCharacter = new PlayerCharacter_1.PlayerCharacter("Player1", "green tracksuit", { x: 0, y: 0 });
+var baseCharacter = new PlayerCharacter_1.PlayerCharacter("Player1", "green", { x: 0, y: 0 });
 // Initializing spawner
 var spawner = new CharacterSpawner_1.CharacterSpawner(baseCharacter);
 // making clones of the character

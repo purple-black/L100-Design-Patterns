@@ -2,7 +2,7 @@ import { PlayerCharacter } from "./models/PlayerCharacter";
 import { CharacterSpawner } from "./spawner/CharacterSpawner";
 
 // Create base character prototype
-const baseCharacter = new PlayerCharacter("Player1", "green tracksuit", { x: 0, y: 0 });
+const baseCharacter = new PlayerCharacter("Player1", "green", { x: 0, y: 0 });
 
 // Initializing spawner
 const spawner = new CharacterSpawner(baseCharacter);
