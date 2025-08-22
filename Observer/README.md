@@ -58,7 +58,7 @@ class NewsAgencyWithoutPattern {
 }
 
 const agency = new NewsAgencyWithoutPattern();
-agency.setNews("Breaking News!", ["CNN", "BBC", "Al Jazeera"]);
+agency.setNews("Breaking News!", ["CNN", "BBC", "ABC"]);
 
 ```
 
