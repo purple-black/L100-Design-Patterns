@@ -27,6 +27,5 @@ export class OrderFacade {
         this.shipping.shipProduct(productId, userId);
         this.notification.sendConfirmation(userId);
 
-        console.log("Order placed successfully!");
     }
 }

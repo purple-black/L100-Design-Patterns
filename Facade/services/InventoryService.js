@@ -16,7 +16,6 @@ var InventoryService = /** @class */ (function () {
             console.log("Product ".concat(productId, " is in stock. Remaining: ").concat(this.stock[productId]));
             return true;
         }
-        console.log("Product ".concat(productId, " is out of stock."));
         return false;
     };
     return InventoryService;

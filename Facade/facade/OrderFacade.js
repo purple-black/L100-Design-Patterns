@@ -5,6 +5,7 @@ var InventoryService_1 = require("../services/InventoryService");
 var PaymentService_1 = require("../services/PaymentService");
 var ShippingService_1 = require("../services/ShippingService");
 var NotificationService_1 = require("../services/NotificationService");
+// manages all the services.
 var OrderFacade = /** @class */ (function () {
     function OrderFacade() {
         this.inventory = new InventoryService_1.InventoryService();
@@ -24,7 +25,6 @@ var OrderFacade = /** @class */ (function () {
         }
         this.shipping.shipProduct(productId, userId);
         this.notification.sendConfirmation(userId);
-        console.log("Order placed successfully!");
     };
     return OrderFacade;
 }());

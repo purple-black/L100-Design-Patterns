@@ -14,7 +14,6 @@ export class InventoryService {
             return true;
         }
 
-        console.log(`Product ${productId} is out of stock.`);
         return false;
     }
 }

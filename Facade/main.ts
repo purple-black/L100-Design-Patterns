@@ -5,3 +5,5 @@ const orderFacade = new OrderFacade();
 
 orderFacade.placeOrder("user123", "product456", 999);
 orderFacade.placeOrder("user456", "product456", 999);
+orderFacade.placeOrder("user456", "product456", 999);
+orderFacade.placeOrder("user456", "product456", 999);
