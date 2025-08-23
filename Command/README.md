@@ -49,8 +49,8 @@ node main.js
 ```ts
 // Client directly calls receiver methods
 const light = new Light();
-light.on();   // 💡 Light is ON
-light.off();  // 💡 Light is OFF
+light.on();   // Light is ON
+light.off();  // Light is OFF
 ```
 
 ## Problems:
