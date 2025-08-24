@@ -63,25 +63,65 @@ node main.js
 handle every possible combination of coffee types via subclasses:
 
 ```ts
+// coffeeWithoutDecorator.ts
+
+// Base class for coffee
 class PlainCoffee {
-    cost(): number { return 10; }
-    description(): string { return "Plain Coffee"; }
+    cost(): number {
+        return 10;
+    }
+
+    description(): string {
+        return "Plain Coffee";
+    }
 }
 
+// Coffee + Milk
 class MilkCoffee extends PlainCoffee {
-    cost(): number { return super.cost() + 10; }
-    description(): string { return super.description() + " + Milk"; }
+    cost(): number {
+        return super.cost() + 10;
+    }
+
+    description(): string {
+        return super.description() + " + Milk";
+    }
 }
 
+// Coffee + Whipped Cream
 class WhippedCreamCoffee extends PlainCoffee {
-    cost(): number { return super.cost() + 20; }
-    description(): string { return super.description() + " + Whipped Cream"; }
+    cost(): number {
+        return super.cost() + 20;
+    }
+
+    description(): string {
+        return super.description() + " + Whipped Cream";
+    }
 }
 
+// Coffee + Milk + Whipped Cream
 class MilkWhippedCreamCoffee extends PlainCoffee {
-    cost(): number { return super.cost() + 30; }
-    description(): string { return super.description() + " + Milk + Whipped Cream"; }
+    cost(): number {
+        return super.cost() + 30; // 10 (plain) + 10 (milk) + 20 (whipped cream)
+    }
+
+    description(): string {
+        return super.description() + " + Milk + Whipped Cream";
+    }
 }
+
+// Client code
+const coffee1 = new MilkWhippedCreamCoffee();
+console.log(`Order: ${coffee1.description()}`);
+console.log(`Cost: $${coffee1.cost().toFixed(2)}`);
+
+const coffee2 = new MilkCoffee();
+console.log(`Order: ${coffee2.description()}`);
+console.log(`Cost: $${coffee2.cost().toFixed(2)}`);
+
+const coffee3 = new WhippedCreamCoffee();
+console.log(`Order: ${coffee3.description()}`);
+console.log(`Cost: $${coffee3.cost().toFixed(2)}`);
+
 ```
 
 ---
