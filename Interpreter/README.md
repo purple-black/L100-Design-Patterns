@@ -8,8 +8,31 @@ The **Interpreter Design Pattern** defines a grammar for a simple language and p
 - Defines **Abstract Expression**, **Terminal Expressions**, and **Non-Terminal Expressions**.
 
 ---
+##  How to Run
 
-## Example: Arithmetic Expression Interpreter
+Clone the repo:
+
+```
+git clone https://github.com/purple-black/L100-Design-Patterns.git
+cd Interpreter
+```
+
+Install TypeScript:
+
+```
+npm install -g typescript
+```
+
+Open terminal and enter:
+Compile TypeScript and then run the compiled javascript file
+
+```
+tsc main.ts
+node main.js
+```
+---
+
+## Use case: Arithmetic Expression Interpreter
 We implemented a small interpreter to evaluate arithmetic expressions like:
 
 (2 + 3) - 1
@@ -22,5 +45,39 @@ We implemented a small interpreter to evaluate arithmetic expressions like:
 
 ---
 
-## 
+
+---
+
+## How it works
+1. Each expression implements `interpret()`.  
+2. The client builds an **expression tree** (`(2 + 3) - 1`).  
+3. Calling `interpret(context)` evaluates the whole tree recursively.  
+
+---
+
+## Without the Pattern
+If we don’t use Interpreter Pattern:
+```ts
+function evaluate(expr: string): number {
+  if (expr === "2 + 3 - 1") return 4;
+  // string parsing logic here...
+  return 0;
+}
+```
+
+---
+
+## Problems
+
+- Hard to extend (adding multiplication, division requires rewriting parsing logic).
+- Code becomes messy with if/else or switch statements.
+- No clear separation between grammar and evaluation.
+
+## Advantages of the Interpreter Pattern
+
+- Easy to extend grammar (just add a new Expression class).
+- Clear separation of concerns (each rule has its own class).
+- Expression evaluation is recursive and modular.
+
+
 
