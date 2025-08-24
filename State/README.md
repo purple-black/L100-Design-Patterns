@@ -12,7 +12,7 @@ Clone the repo:
 
 ```
 git clone https://github.com/purple-black/L100-Design-Patterns.git
-cd AbstractFactory
+cd State
 ```
 
 Install TypeScript:
