@@ -51,7 +51,27 @@ We implemented a small interpreter to evaluate arithmetic expressions like:
 ## How it works
 1. Each expression implements `interpret()`.  
 2. The client builds an **expression tree** (`(2 + 3) - 1`).  
-3. Calling `interpret(context)` evaluates the whole tree recursively.  
+3. Calling `interpret(context)` evaluates the whole tree recursively.
+
+- AbstractExpression → AbstractExpression.ts
+
+Defines interpret(context) for all grammar rules.
+
+- TerminalExpression → NumberExpression.ts
+
+Implements numbers (final values, no further interpretation).
+
+- NonTerminalExpression → AddExpression.ts, SubtractExpression.ts
+
+Define grammar rules that combine expressions.
+
+- Context → Context.ts
+
+Provides external data (like variable values).
+
+- Client → main.ts
+
+Builds an expression tree and calls interpret() on it.
 
 ---
 
