@@ -1,11 +1,9 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-var Context_1 = require("./context/Context");
-var NumberExpression_1 = require("./expressions/NumberExpression");
-var AddExpression_1 = require("./expressions/AddExpression");
-var SubtractExpression_1 = require("./expressions/SubtractExpression");
+import { Context } from "./context/Context";
+import { NumberExpression } from "./expressions/NumberExpression";
+import { AddExpression } from "./expressions/AddExpression";
+import { SubtractExpression } from "./expressions/SubtractExpression";
 // Client code
-var context = new Context_1.Context();
+const context = new Context();
 // Building expression: (2 + 3) - 1
-var expression = new SubtractExpression_1.SubtractExpression(new AddExpression_1.AddExpression(new NumberExpression_1.NumberExpression(2), new NumberExpression_1.NumberExpression(3)), new NumberExpression_1.NumberExpression(1));
+const expression = new SubtractExpression(new AddExpression(new NumberExpression(2), new NumberExpression(3)), new NumberExpression(1));
 console.log("(2 + 3) - 1 = " + expression.interpret(context));

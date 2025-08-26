@@ -1,5 +1,8 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.Context = void 0;
 // Context class: holds information required by the interpreter
-export class Context {
+class Context {
     constructor() {
         this.data = new Map();
     }
@@ -13,3 +16,4 @@ export class Context {
         return this.data.get(name);
     }
 }
+exports.Context = Context;

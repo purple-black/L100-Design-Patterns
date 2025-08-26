@@ -1,4 +1,7 @@
-export class SubtractExpression {
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.SubtractExpression = void 0;
+class SubtractExpression {
     constructor(left, right) {
         this.left = left;
         this.right = right;
@@ -7,3 +10,4 @@ export class SubtractExpression {
         return this.left.interpret(context) - this.right.interpret(context);
     }
 }
+exports.SubtractExpression = SubtractExpression;
