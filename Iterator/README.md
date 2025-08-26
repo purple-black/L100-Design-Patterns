@@ -24,8 +24,8 @@ Open terminal and enter:
 Compile TypeScript and then run the compiled javascript file
 
 ```
-tsc main.ts
-node main.js
+tsc
+node dist/main.js
 ```
 ---
 
