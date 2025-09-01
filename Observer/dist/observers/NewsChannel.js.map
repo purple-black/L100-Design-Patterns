@@ -1,0 +1,1 @@
+{"version":3,"file":"NewsChannel.js","sourceRoot":"","sources":["../../observers/NewsChannel.ts"],"names":[],"mappings":";;;AAGA,MAAa,WAAW;IAGtB,YAAY,IAAY;QACtB,IAAI,CAAC,WAAW,GAAG,IAAI,CAAC;IAC1B,CAAC;IAED,MAAM,CAAC,IAAY;QACjB,OAAO,CAAC,GAAG,CAAC,GAAG,IAAI,CAAC,WAAW,mBAAmB,IAAI,EAAE,CAAC,CAAC;IAC5D,CAAC;CACF;AAVD,kCAUC"}
