@@ -3,11 +3,12 @@
     "target": "es2015",
     "module": "commonjs",
     "lib": ["es2015", "dom"],
-    "outDir": "./dist",              // <--- all compiled JS goes here
-    "rootDir": "./",                 // ensures TS respects your folder structure
+    "outDir": "./dist",
+    "rootDir": "./",
     "strict": true,
     "esModuleInterop": true,
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "sourceMap": true 
   },
   "include": ["./**/*.ts"],
   "exclude": ["node_modules"]

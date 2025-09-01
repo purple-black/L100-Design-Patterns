@@ -13,7 +13,7 @@ function runApp(factory: NotificationFactory) {
     toast.display("Your data was stored successfully");
 }
 
-var platform = "web";
+var platform = "mobile";
 
 if (platform == 'web') {
     var factory: NotificationFactory = new WebNotificationFactory();

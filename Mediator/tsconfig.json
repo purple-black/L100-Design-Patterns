@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "target": "ES2015",
+    "module": "commonjs",
+    "outDir": "./dist",
+    "rootDir": "./",
+    "strict": true,
+    "esModuleInterop": true,
+    "sourceMap": true   // 👈 important for debugging TypeScript
+  },
+  "include": ["./**/*.ts"]
+}

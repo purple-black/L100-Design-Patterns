@@ -5,7 +5,7 @@ name, health index, weapon and skillset
 
 import { CharacterFactory } from "./factories/CharacterFactory";
 
-const gameCharacterType = "mage";
+const gameCharacterType = "Archer";
 // calling createCharacter method inside character factory.
 // passing the type initiated above. and displaying using the 
 // displayCharacteristics method inside each of the character classed

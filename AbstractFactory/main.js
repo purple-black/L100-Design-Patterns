@@ -8,7 +8,7 @@ function runApp(factory) {
     alert.show("Page Not Responding!");
     toast.display("Your data was stored successfully");
 }
-var platform = "web";
+var platform = "mobile";
 if (platform == 'web') {
     var factory = new WebNotificationFactory_1.WebNotificationFactory();
     runApp(factory);
