@@ -1,0 +1,1 @@
+{"version":3,"file":"NumberExpression.js","sourceRoot":"","sources":["../../expressions/NumberExpression.ts"],"names":[],"mappings":";;;AAIA,MAAa,gBAAgB;IAG3B,YAAY,KAAa;QACvB,IAAI,CAAC,KAAK,GAAG,KAAK,CAAC;IACrB,CAAC;IAED,SAAS,CAAC,QAAiB;QACzB,OAAO,IAAI,CAAC,KAAK,CAAC;IACpB,CAAC;CACF;AAVD,4CAUC"}

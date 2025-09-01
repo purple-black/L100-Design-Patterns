@@ -18,3 +18,4 @@ context.setVariable("y", 4);
 const expression2 = new SubtractExpression_1.SubtractExpression(new AddExpression_1.AddExpression(new VariableExpression_1.VariableExpression("x"), new NumberExpression_1.NumberExpression(3)), new VariableExpression_1.VariableExpression("y"));
 // Evaluate
 console.log("(x + 3) - y = " + expression2.interpret(context));
+//# sourceMappingURL=main.js.map

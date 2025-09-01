@@ -1,0 +1,1 @@
+{"version":3,"file":"VariableExpression.js","sourceRoot":"","sources":["../../expressions/VariableExpression.ts"],"names":[],"mappings":";;;AAGA,oCAAoC;AACpC,MAAa,kBAAkB;IAG7B,YAAY,IAAY;QACtB,IAAI,CAAC,IAAI,GAAG,IAAI,CAAC;IACnB,CAAC;IAED,SAAS,CAAC,OAAgB;QACxB,OAAO,OAAO,CAAC,WAAW,CAAC,IAAI,CAAC,IAAI,CAAC,CAAC;IACxC,CAAC;CACF;AAVD,gDAUC"}
