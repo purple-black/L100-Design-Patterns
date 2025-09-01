@@ -1,6 +1,6 @@
-import { VectorRenderer } from "./implementors/VectorRenderer";
-import { RasterRenderer } from "./implementors/RastorRenderer";
-import { Circle } from "./abstraction/Circle";
+import { VectorRenderer } from "./implementors/vectorRenderer";
+import { RasterRenderer } from "./implementors/rastorRenderer";
+import { Circle } from "./abstraction/circle";
 import { Rectangle } from "./abstraction/rectangle";
 
 const vectorRenderer = new VectorRenderer();
