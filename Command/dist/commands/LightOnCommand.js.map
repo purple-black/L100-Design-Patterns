@@ -1,0 +1,1 @@
+{"version":3,"file":"LightOnCommand.js","sourceRoot":"","sources":["../../commands/LightOnCommand.ts"],"names":[],"mappings":";;;AAGA,oCAAoC;AACpC,MAAa,cAAc;IACzB,YAAoB,KAAY;QAAZ,UAAK,GAAL,KAAK,CAAO;IAAG,CAAC;IAEpC,OAAO;QACL,IAAI,CAAC,KAAK,CAAC,EAAE,EAAE,CAAC;IAClB,CAAC;IAED,IAAI;QACF,IAAI,CAAC,KAAK,CAAC,GAAG,EAAE,CAAC;IACnB,CAAC;CACF;AAVD,wCAUC"}

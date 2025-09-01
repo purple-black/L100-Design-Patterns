@@ -1,0 +1,1 @@
+{"version":3,"file":"FanOffCommand.js","sourceRoot":"","sources":["../../commands/FanOffCommand.ts"],"names":[],"mappings":";;;AAGA,mCAAmC;AACnC,MAAa,aAAa;IACxB,YAAoB,GAAQ;QAAR,QAAG,GAAH,GAAG,CAAK;IAAG,CAAC;IAEhC,OAAO;QACL,IAAI,CAAC,GAAG,CAAC,GAAG,EAAE,CAAC;IACjB,CAAC;IAED,IAAI;QACF,IAAI,CAAC,GAAG,CAAC,EAAE,EAAE,CAAC;IAChB,CAAC;CACF;AAVD,sCAUC"}

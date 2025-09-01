@@ -1,0 +1,1 @@
+{"version":3,"file":"FanOnCommand.js","sourceRoot":"","sources":["../../commands/FanOnCommand.ts"],"names":[],"mappings":";;;AAGA,kCAAkC;AAClC,MAAa,YAAY;IACvB,YAAoB,GAAQ;QAAR,QAAG,GAAH,GAAG,CAAK;IAAG,CAAC;IAEhC,OAAO;QACL,IAAI,CAAC,GAAG,CAAC,EAAE,EAAE,CAAC;IAChB,CAAC;IAED,IAAI;QACF,IAAI,CAAC,GAAG,CAAC,GAAG,EAAE,CAAC;IACjB,CAAC;CACF;AAVD,oCAUC"}

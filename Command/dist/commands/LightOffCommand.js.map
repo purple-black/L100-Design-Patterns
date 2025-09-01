@@ -1,0 +1,1 @@
+{"version":3,"file":"LightOffCommand.js","sourceRoot":"","sources":["../../commands/LightOffCommand.ts"],"names":[],"mappings":";;;AAGA,qCAAqC;AACrC,MAAa,eAAe;IAC1B,YAAoB,KAAY;QAAZ,UAAK,GAAL,KAAK,CAAO;IAAG,CAAC;IAEpC,OAAO;QACL,IAAI,CAAC,KAAK,CAAC,GAAG,EAAE,CAAC;IACnB,CAAC;IAED,IAAI;QACF,IAAI,CAAC,KAAK,CAAC,EAAE,EAAE,CAAC;IAClB,CAAC;CACF;AAVD,0CAUC"}
