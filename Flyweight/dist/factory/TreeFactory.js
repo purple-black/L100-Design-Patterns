@@ -23,3 +23,4 @@ class TreeFactory {
 exports.TreeFactory = TreeFactory;
 // a map which has the key and its treetypes. all uniques ones stored here and is used for the reuse logic
 TreeFactory.treeTypes = new Map();
+//# sourceMappingURL=TreeFactory.js.map

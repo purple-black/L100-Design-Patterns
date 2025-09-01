@@ -1,14 +1,28 @@
+// {
+//   "compilerOptions": {
+//     "target": "ES2015",
+//     "lib": ["ES2015", "DOM"],
+//     "module": "commonjs",
+//     "strict": true,
+//     "outDir": "dist",
+//     "rootDir": ".",
+//     "esModuleInterop": true,
+//     "forceConsistentCasingInFileNames": true
+//   },
+//   "include": ["./**/*.ts"],
+//   "exclude": ["node_modules", "dist"]
+// }
+
 {
   "compilerOptions": {
     "target": "ES2015",
-    "lib": ["ES2015", "DOM"],         // Add DOM to access 'console', 'document', etc.
     "module": "commonjs",
+    "outDir": "./dist",
+    "rootDir": "./",
     "strict": true,
-    "outDir": "dist",
-    "rootDir": ".",
     "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true
+    "sourceMap": true
   },
-  "include": ["./**/*.ts"],
-  "exclude": ["node_modules", "dist"]
+  "include": ["./**/*.ts"]
 }
+

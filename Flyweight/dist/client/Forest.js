@@ -24,3 +24,4 @@ class Forest {
     }
 }
 exports.Forest = Forest;
+//# sourceMappingURL=Forest.js.map
