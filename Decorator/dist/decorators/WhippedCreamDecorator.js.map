@@ -1,0 +1,1 @@
+{"version":3,"file":"WhippedCreamDecorator.js","sourceRoot":"","sources":["../../decorators/WhippedCreamDecorator.ts"],"names":[],"mappings":";AAAA,oCAAoC;AACpC,gDAAgD;AAChD,0FAA0F;;;AAE1F,uDAAoD;AAEpD,MAAa,qBAAsB,SAAQ,iCAAe;IACtD,IAAI;QACA,OAAO,KAAK,CAAC,IAAI,EAAE,GAAG,EAAE,CAAC;IAC7B,CAAC;IAED,WAAW;QACP,OAAO,KAAK,CAAC,WAAW,EAAE,GAAG,kBAAkB,CAAC;IACpD,CAAC;CACJ;AARD,sDAQC"}
