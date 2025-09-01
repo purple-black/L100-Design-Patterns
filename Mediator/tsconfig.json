@@ -6,7 +6,7 @@
     "rootDir": "./",
     "strict": true,
     "esModuleInterop": true,
-    "sourceMap": true   // 👈 important for debugging TypeScript
+    "sourceMap": true
   },
   "include": ["./**/*.ts"]
 }
