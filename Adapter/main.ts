@@ -1,6 +1,6 @@
 // Client code using only the PaymentProcessor interface
 
-import { PaymentProcessor } from "./interfaces/paymentProcessor";
+import { PaymentProcessor } from "./interfaces/PaymentProcessor";
 import { PaymentAdapter } from "./adapters/PaymentAdapter";
 
 function processTransaction(processor: PaymentProcessor, amount: number): void {

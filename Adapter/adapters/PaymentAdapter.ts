@@ -1,6 +1,6 @@
 // Adapter: Converts the ThirdPartyPayment interface into PaymentProcessor
 
-import { PaymentProcessor } from "../interfaces/paymentProcessor";
+import { PaymentProcessor } from "../interfaces/PaymentProcessor";
 import { ThirdPartyPayment } from "../thirdParty/ThirdPartyPayment";
 
 export class PaymentAdapter implements PaymentProcessor {
