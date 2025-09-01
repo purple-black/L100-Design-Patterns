@@ -1,4 +1,4 @@
-import { MealBuilder } from "../interfaces/mealBuilder";
+import { MealBuilder } from "../interfaces/MealBuilder";
 
 export class MealDirector {
   constructor(private builder: MealBuilder) {}

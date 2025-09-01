@@ -1,5 +1,5 @@
-import { Meal } from "../products/meal";
-import { MealBuilder } from "../interfaces/mealBuilder";
+import { Meal } from "../products/Meal";
+import { MealBuilder } from "../interfaces/MealBuilder";
 
 export class NonVegMealBuilder implements MealBuilder {
   private meal: Meal = new Meal();

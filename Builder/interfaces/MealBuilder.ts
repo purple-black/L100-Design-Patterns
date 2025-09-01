@@ -1,4 +1,4 @@
-import { Meal } from "../products/meal";
+import { Meal } from "../products/Meal";
 
 export interface MealBuilder {
   addMainCourse(): this;
