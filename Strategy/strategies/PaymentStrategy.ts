@@ -1,4 +1,4 @@
 // Strategy Interface
-export interface PaymentStrategy {
+export interface IPaymentStrategy {
   pay(amount: number): void;
 }
