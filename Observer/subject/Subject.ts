@@ -1,8 +1,8 @@
 // Subject interface: Defines methods to manage observers
-import { Observer } from "../observers/Observer";
+import { IObserver } from "../observers/Observer";
 
-export interface Subject {
-  attach(observer: Observer): void;   // Subscribe observer
-  detach(observer: Observer): void;   // Unsubscribe observer
+export interface ISubject {
+  attach(observer: IObserver): void;   // Subscribe observer
+  detach(observer: IObserver): void;   // Unsubscribe observer
   notify(): void;                     // Notify all observers
 }

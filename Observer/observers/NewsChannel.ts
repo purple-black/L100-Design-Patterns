@@ -1,7 +1,7 @@
 // Concrete Observer: Implements reaction to subject updates
-import { Observer } from "./Observer";
+import { IObserver } from "./Observer";
 
-export class NewsChannel implements Observer {
+export class NewsChannel implements IObserver {
   private channelName: string;
 
   constructor(name: string) {

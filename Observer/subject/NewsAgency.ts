@@ -1,16 +1,16 @@
 // Concrete Subject: Maintains news state and notifies observers
-import { Subject } from "./Subject";
-import { Observer } from "../observers/Observer";
+import { ISubject } from "./Subject";
+import { IObserver } from "../observers/Observer";
 
-export class NewsAgency implements Subject {
-  private observers: Observer[] = [];
+export class NewsAgency implements ISubject {
+  private observers: IObserver[] = [];
   private news: string = "";
 
-  attach(observer: Observer): void {
+  attach(observer: IObserver): void {
     this.observers.push(observer);
   }
 
-  detach(observer: Observer): void {
+  detach(observer: IObserver): void {
     this.observers = this.observers.filter(obs => obs !== observer);
   }
 
