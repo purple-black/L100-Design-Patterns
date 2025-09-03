@@ -1,6 +1,6 @@
-import { DrawingAPI } from './drawingAPI';
+import { IDrawingAPI } from './drawingAPI';
 
-export class RasterRenderer implements DrawingAPI {
+export class RasterRenderer implements IDrawingAPI {
     drawCircle(x: number, y: number, radius: number): void {
         console.log(`RasterRenderer: Drawing pixels for circle at (${x}, ${y}) with radius ${radius}`);
     }

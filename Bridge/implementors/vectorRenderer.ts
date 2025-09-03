@@ -1,6 +1,6 @@
-import { DrawingAPI } from './drawingAPI';
+import { IDrawingAPI } from './drawingAPI';
 
-export class VectorRenderer implements DrawingAPI {
+export class VectorRenderer implements IDrawingAPI {
     drawCircle(x: number, y: number, radius: number): void {
         console.log(`VectorRenderer: Drawing circle at (${x}, ${y}) with radius ${radius}`);
     }

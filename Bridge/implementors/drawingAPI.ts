@@ -1,4 +1,4 @@
-export interface DrawingAPI {
+export interface IDrawingAPI {
     drawCircle(x: number, y: number, radius: number): void;
     drawRectangle(x: number, y: number, width: number, height: number): void;
 }

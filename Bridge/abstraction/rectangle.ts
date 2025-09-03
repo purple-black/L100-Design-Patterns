@@ -1,5 +1,5 @@
 import { Shape } from './shape';
-import { DrawingAPI } from '../implementors/drawingAPI';
+import { IDrawingAPI } from '../implementors/drawingAPI';
 
 export class Rectangle extends Shape {
     private x: number;
@@ -7,7 +7,7 @@ export class Rectangle extends Shape {
     private width: number;
     private height: number;
 
-    constructor(x: number, y: number, width: number, height: number, drawingAPI: DrawingAPI) {
+    constructor(x: number, y: number, width: number, height: number, drawingAPI: IDrawingAPI) {
         super(drawingAPI);
         this.x = x;
         this.y = y;

@@ -1,5 +1,5 @@
 import { Shape } from './shape';
-import { DrawingAPI } from '../implementors/drawingAPI';
+import { IDrawingAPI } from '../implementors/drawingAPI';
 
 // Refined Abstraction, a specific implementation of the high-level Shape abstraction.
 export class Circle extends Shape {
@@ -7,7 +7,7 @@ export class Circle extends Shape {
     private y: number;
     private radius: number;
 
-    constructor(x: number, y: number, radius: number, drawingAPI: DrawingAPI) {
+    constructor(x: number, y: number, radius: number, drawingAPI: IDrawingAPI) {
         super(drawingAPI); //Calls the constructor of the parent class (Shape) and passes the drawingAPI to it.
         this.x = x;
         this.y = y;
