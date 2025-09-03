@@ -1,11 +1,11 @@
-import { CharacterPrototype } from "../prototype/CharacterPrototype";
+import { ICharacterPrototype } from "../prototype/CharacterPrototype";
 
 export interface Position {
     x: number;
     y: number;
 }
 //concrete prototype class implementing the CharacterPrototype interface
-export class PlayerCharacter implements CharacterPrototype {
+export class PlayerCharacter implements ICharacterPrototype {
     name: string;
     appearance: string;
     position: Position;

@@ -1,6 +1,6 @@
 import { PlayerCharacter } from "../models/PlayerCharacter";
 
-interface SpawnOptions {
+interface ISpawnOptions {
     name?: string;
     appearance?: string;
     position?: { x: number; y: number };
@@ -13,7 +13,7 @@ export class CharacterSpawner {
         this.prototype = prototype;
     }
 
-    spawnCharacter(options: SpawnOptions): PlayerCharacter {
+    spawnCharacter(options: ISpawnOptions): PlayerCharacter {
         const clone = this.prototype.clone(); // cloning using the clone method of the prototype.
 
         if (options.name) clone.name = options.name;

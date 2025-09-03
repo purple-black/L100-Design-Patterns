@@ -1,3 +1,3 @@
-export interface CharacterPrototype {
-    clone(): CharacterPrototype;
+export interface ICharacterPrototype {
+    clone(): ICharacterPrototype;
 }
