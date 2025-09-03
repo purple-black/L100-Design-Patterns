@@ -1,7 +1,7 @@
-import { GameCharacter } from "./GameCharacter";
+import { IGameCharacter } from "./GameCharacter";
 
 // Mage class with the structure given in GameCharacter, defines four of its properties.
-export class Mage implements GameCharacter {
+export class Mage implements IGameCharacter {
     name = "Mage";
     health = 100;
     weapon = "Staff";

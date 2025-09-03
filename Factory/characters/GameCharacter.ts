@@ -2,7 +2,7 @@
 interface that defines the struction of the GameCharacter classes like Warrior, Mage and Archer
 */
 
-export interface GameCharacter {
+export interface IGameCharacter {
     name: string;
     health: number;
     weapon: string;

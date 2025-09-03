@@ -1,7 +1,7 @@
-import { GameCharacter } from "./GameCharacter";
+import { IGameCharacter } from "./GameCharacter";
 
 // Archer class with the structure given in GameCharacter, defines four of its properties.
-export class Archer implements GameCharacter {
+export class Archer implements IGameCharacter {
     name = "Archer";
     health = 120;
     weapon = "Bow";
