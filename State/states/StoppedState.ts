@@ -1,8 +1,8 @@
-import { State } from "./State";
+import { IState } from "./State";
 import { MediaPlayer } from "../context/MediaPlayer";
 
 // Concrete State: Stopped
-export class StoppedState implements State {
+export class StoppedState implements IState {
   private player: MediaPlayer;
 
   constructor(player: MediaPlayer) {
