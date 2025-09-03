@@ -1,10 +1,10 @@
 // Concrete Visitor: Export elements to HTML
-import { Visitor } from "./Visitor";
+import { IVisitor } from "./Visitor";
 import { Text } from "../elements/Text";
 import { ImageElement } from "../elements/ImageElement";
 import { Table } from "../elements/Table";
 
-export class ExportVisitor implements Visitor {
+export class ExportVisitor implements IVisitor {
     visitText(text: Text): void {
         console.log(`<p>${text.content}</p>`);
     }

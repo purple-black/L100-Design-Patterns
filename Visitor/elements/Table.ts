@@ -1,11 +1,11 @@
-import { Element } from "./Element";
-import { Visitor } from "../visitors/Visitor";
+import { IElement } from "./Element";
+import { IVisitor } from "../visitors/Visitor";
 
 // Concrete Element: Table
-export class Table implements Element {
+export class Table implements IElement {
     constructor(public rows: number, public columns: number) {}
 
-    accept(visitor: Visitor): void {
+    accept(visitor: IVisitor): void {
         visitor.visitTable(this);
     }
 }

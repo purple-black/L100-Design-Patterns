@@ -1,10 +1,10 @@
 // Concrete Visitor: Render elements to screen
-import { Visitor } from "./Visitor";
+import { IVisitor } from "./Visitor";
 import { Text } from "../elements/Text";
 import { ImageElement } from "../elements/ImageElement";
 import { Table } from "../elements/Table";
 
-export class RenderVisitor implements Visitor {
+export class RenderVisitor implements IVisitor {
     visitText(text: Text): void {
         console.log(`Rendering Text: "${text.content}"`);
     }

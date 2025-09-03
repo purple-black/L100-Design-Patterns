@@ -1,6 +1,6 @@
 // Base Element interface
-import { Visitor } from "../visitors/Visitor";
+import { IVisitor } from "../visitors/Visitor";
 
-export interface Element {
-    accept(visitor: Visitor): void;
+export interface IElement {
+    accept(visitor: IVisitor): void;
 }

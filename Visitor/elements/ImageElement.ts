@@ -1,11 +1,11 @@
-import { Element } from "./Element";
-import { Visitor } from "../visitors/Visitor";
+import { IElement } from "./Element";
+import { IVisitor } from "../visitors/Visitor";
 
 // Concrete Element: Image
-export class ImageElement implements Element {
+export class ImageElement implements IElement {
     constructor(public filename: string) {}
 
-    accept(visitor: Visitor): void {
+    accept(visitor: IVisitor): void {
         visitor.visitImage(this);
     }
 }
