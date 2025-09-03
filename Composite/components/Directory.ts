@@ -1,16 +1,16 @@
 // the composite node -> directories which also implements the FileSystemComponent
-import { FileSystemComponent } from "./FileSystemComponent";
+import { IFileSystemComponent } from "./FileSystemComponent";
 
-export class Directory implements FileSystemComponent {
-    private children: FileSystemComponent[] = [];
+export class Directory implements IFileSystemComponent {
+    private children: IFileSystemComponent[] = [];
 
     constructor(private name: string) {}
 
-    add(component: FileSystemComponent): void {
+    add(component: IFileSystemComponent): void {
         this.children.push(component);
     }
 
-    remove(component: FileSystemComponent): void {
+    remove(component: IFileSystemComponent): void {
         this.children = this.children.filter(child => child !== component);
     }
 
