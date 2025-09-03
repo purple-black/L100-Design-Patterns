@@ -1,3 +1,3 @@
-export interface Toast {
+export interface IToast {
     display(message: string): void;
 }

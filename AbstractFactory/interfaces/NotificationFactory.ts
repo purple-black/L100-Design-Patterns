@@ -1,7 +1,7 @@
-import { Alert } from "./Alert";
-import { Toast } from "./Toast";
+import { IAlert } from "./Alert";
+import { IToast } from "./Toast";
 
-export interface NotificationFactory {
-    createAlert(): Alert;
-    createToast(): Toast;
+export interface INotificationFactory {
+    createAlert(): IAlert;
+    createToast(): IToast;
 }

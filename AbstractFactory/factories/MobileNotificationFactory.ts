@@ -1,14 +1,14 @@
-import { NotificationFactory } from "../interfaces/NotificationFactory";
-import { Alert } from "../interfaces/Alert";
-import { Toast } from "../interfaces/Toast";
+import { INotificationFactory } from "../interfaces/NotificationFactory";
+import { IAlert } from "../interfaces/Alert";
+import { IToast } from "../interfaces/Toast";
 import { MobileAlert } from "../products/MobileAlert";
 import { MobileToast } from "../products/MobileToast";
 
-export class MobileNotificationFactory implements NotificationFactory {
-    createAlert(): Alert {
+export class MobileNotificationFactory implements INotificationFactory {
+    createAlert(): IAlert {
         return new MobileAlert();
     }
-    createToast(): Toast {
+    createToast(): IToast {
         return new MobileToast();
     }
 }
