@@ -2,9 +2,9 @@
 // This is the base object that is decorated.
 // It implements the Coffee interface directly.
 
-import { Coffee } from "./Coffee";
+import { ICoffee } from "./Coffee";
 
-export class PlainCoffee implements Coffee {
+export class PlainCoffee implements ICoffee {
     cost(): number {
         return 10;
     }

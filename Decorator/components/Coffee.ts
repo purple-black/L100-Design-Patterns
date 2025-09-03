@@ -1,5 +1,5 @@
 // Interface Component
-export interface Coffee {
+export interface ICoffee {
     cost(): number;
     description(): string;
 }

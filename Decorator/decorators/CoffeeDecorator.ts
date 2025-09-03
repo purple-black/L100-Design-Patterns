@@ -5,12 +5,12 @@
 // to create specific decorators. This is not called directly form the main.ts and the protected coffee can be assecible
 // its subclasses and this class cannot be instantiated directly by external code
 
-import { Coffee } from "../components/Coffee";
+import { ICoffee } from "../components/Coffee";
 
-export abstract class CoffeeDecorator implements Coffee {
-    protected coffee: Coffee;
+export abstract class CoffeeDecorator implements ICoffee {
+    protected coffee: ICoffee;
 
-    constructor(coffee: Coffee) {
+    constructor(coffee: ICoffee) {
         this.coffee = coffee;
     }
 
