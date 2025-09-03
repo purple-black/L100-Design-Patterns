@@ -1,8 +1,8 @@
 // Concrete Iterator for traversing books
-import { Iterator } from "./Iterator";
+import { IIterator } from "./Iterator";
 import { Book } from "../model/Book";
 
-export class BookIterator implements Iterator<Book> {
+export class BookIterator implements IIterator<Book> {
     private index: number = 0;
 
     constructor(private books: Book[]) {}

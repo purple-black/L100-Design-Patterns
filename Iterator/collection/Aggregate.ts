@@ -1,6 +1,6 @@
 // Defines an interface for collections that can return an iterator
-import { Iterator } from "../iterator/Iterator";
+import { IIterator } from "../iterator/Iterator";
 
-export interface Aggregate<T> {
-    createIterator(): Iterator<T>;
+export interface IAggregate<T> {
+    createIterator(): IIterator<T>;
 }

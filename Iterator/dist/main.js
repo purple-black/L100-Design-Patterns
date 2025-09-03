@@ -11,6 +11,6 @@ const iterator = library.createIterator();
 console.log("Iterating through library:");
 while (iterator.hasNext()) {
     const book = iterator.next();
-    console.log(`📖 ${book.title} by ${book.author}`);
+    console.log(`${book.title} by ${book.author}`);
 }
 //# sourceMappingURL=main.js.map
