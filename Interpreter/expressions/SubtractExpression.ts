@@ -1,12 +1,12 @@
 // Non-Terminal Expression: subtracts two expressions
-import { AbstractExpression } from "./AbstractExpression";
+import { IAbstractExpression } from "./AbstractExpression";
 import { Context } from "../context/Context";
 
-export class SubtractExpression implements AbstractExpression {
-  private left: AbstractExpression;
-  private right: AbstractExpression;
+export class SubtractExpression implements IAbstractExpression {
+  private left: IAbstractExpression;
+  private right: IAbstractExpression;
 
-  constructor(left: AbstractExpression, right: AbstractExpression) {
+  constructor(left: IAbstractExpression, right: IAbstractExpression) {
     this.left = left;
     this.right = right;
   }

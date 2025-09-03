@@ -1,8 +1,8 @@
 // Terminal Expression: simply returns the number
-import { AbstractExpression } from "./AbstractExpression";
+import { IAbstractExpression } from "./AbstractExpression";
 import { Context } from "../context/Context";
 
-export class NumberExpression implements AbstractExpression {
+export class NumberExpression implements IAbstractExpression {
   private value: number;
 
   constructor(value: number) {
