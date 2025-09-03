@@ -1,7 +1,7 @@
 import { Meal } from "../products/Meal";
-import { MealBuilder } from "../interfaces/MealBuilder";
+import { IMealBuilder } from "../interfaces/MealBuilder";
 
-export class VegMealBuilder implements MealBuilder {
+export class VegMealBuilder implements IMealBuilder {
   private meal: Meal = new Meal();
 
   addMainCourse(): this {

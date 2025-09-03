@@ -1,6 +1,6 @@
 import { Meal } from "../products/Meal";
 
-export interface MealBuilder {
+export interface IMealBuilder {
   addMainCourse(): this;
   addDrink(): this;
   addSide(): this;
