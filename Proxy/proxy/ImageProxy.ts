@@ -2,10 +2,10 @@
 It delays the instantiation of RealImage
 It loads the resource only when needed, that is when display method is called, not when created
 */
-import { Image } from "../interfaces/Image";
+import { IImage } from "../interfaces/Image";
 import { RealImage } from "../real/RealImage";
 
-export class ImageProxy implements Image {
+export class ImageProxy implements IImage {
     private filename: string;
     private realImage: RealImage | null = null;
 
