@@ -1,8 +1,8 @@
-import { Command } from "./Command";
+import { ICommand } from "./Command";
 import { Fan } from "../receivers/Fan";
 
 // Concrete Command to turn fan OFF
-export class FanOffCommand implements Command {
+export class FanOffCommand implements ICommand {
   constructor(private fan: Fan) {}
 
   execute(): void {

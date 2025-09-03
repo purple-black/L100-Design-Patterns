@@ -1,5 +1,5 @@
 // Command interface - all commands must implement this
-export interface Command {
+export interface ICommand {
   execute(): void;
   undo(): void;  // optional but useful for undo functionality
 }

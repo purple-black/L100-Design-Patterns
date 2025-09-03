@@ -1,11 +1,11 @@
-import { Command } from "../commands/Command";
+import { ICommand } from "../commands/Command";
 
 // Invoker - RemoteControl
 export class RemoteControl {
-  private commandSlots: Command[] = [];
-  private lastCommand: Command | null = null;
+  private commandSlots: ICommand[] = [];
+  private lastCommand: ICommand | null = null;
 
-  setCommand(slot: number, command: Command): void {
+  setCommand(slot: number, command: ICommand): void {
     this.commandSlots[slot] = command;
   }
 

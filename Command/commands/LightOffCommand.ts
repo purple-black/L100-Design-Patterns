@@ -1,8 +1,8 @@
-import { Command } from "./Command";
+import { ICommand } from "./Command";
 import { Light } from "../receivers/Light";
 
 // Concrete Command to turn light OFF
-export class LightOffCommand implements Command {
+export class LightOffCommand implements ICommand {
   constructor(private light: Light) {}
 
   execute(): void {
