@@ -1,8 +1,8 @@
-import { ChatRoomMediator } from "../interfaces/ChatRoomMediator";
+import { IChatRoomMediator } from "../interfaces/ChatRoomMediator";
 import { User } from "../colleagues/User";
 
 // Concrete Mediator Implementation
-export class ChatRoom implements ChatRoomMediator {
+export class ChatRoom implements IChatRoomMediator {
     private users: User[] = [];
 
     addUser(user: User) {

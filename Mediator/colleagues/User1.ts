@@ -1,8 +1,8 @@
 import { User } from "./User";
-import { ChatRoomMediator } from "../interfaces/ChatRoomMediator";
+import { IChatRoomMediator } from "../interfaces/ChatRoomMediator";
 
 export class User1 extends User {
-    constructor(name: string, mediator: ChatRoomMediator) {
+    constructor(name: string, mediator: IChatRoomMediator) {
         super(name, mediator);
     }
 

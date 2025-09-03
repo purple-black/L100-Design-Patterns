@@ -1,11 +1,11 @@
-import { ChatRoomMediator } from "../interfaces/ChatRoomMediator";
+import { IChatRoomMediator } from "../interfaces/ChatRoomMediator";
 
 // Abstract User (Colleague)
 export abstract class User {
-    protected mediator: ChatRoomMediator;
+    protected mediator: IChatRoomMediator;
     protected name: string;
 
-    constructor(name: string, mediator: ChatRoomMediator) {
+    constructor(name: string, mediator: IChatRoomMediator) {
         this.name = name;
         this.mediator = mediator;
     }
