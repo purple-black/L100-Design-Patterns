@@ -1,9 +1,9 @@
 // Client code using only the PaymentProcessor interface
 
-import { PaymentProcessor } from "./interfaces/PaymentProcessor";
+import { IPaymentProcessor } from "./interfaces/PaymentProcessor";
 import { PaymentAdapter } from "./adapters/PaymentAdapter";
 
-function processTransaction(processor: PaymentProcessor, amount: number): void {
+function processTransaction(processor: IPaymentProcessor, amount: number): void {
     console.log("Processing payment...");
     processor.pay(amount);
 }
